@@ -1,13 +1,10 @@
+/**
+ * @file
+ * Add Drupal functions.
+ */
 
-var Drupal = Drupal || {};
-
-(function ($, Drupal) {
+(function (window, document, $) {
   "use strict";
-
-  Drupal.behaviors.projectlibre = {
-    attach: function (context) {
-    }
-  };
 
   function add_attribute_menu () {
     var width = window.innerWidth || document.documentElement.clientWidth;
@@ -120,4 +117,4 @@ var Drupal = Drupal || {};
       width_media_box();
     });
   });
-})(jQuery, Drupal);
+})(this, this.document, this.jQuery);
