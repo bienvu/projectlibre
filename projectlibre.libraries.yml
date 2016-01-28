@@ -1,0 +1,28 @@
+global-styling:
+  css:
+    theme:
+      css/owl.theme.css: {}
+      css/owl.carousel.css: {}
+      css/style.css: {}
+
+bootstrap-scripts:
+  js:
+    bootstrap/js/affix.js: {}
+    bootstrap/js/alert.js: {}
+    bootstrap/js/button.js: {}
+    bootstrap/js/carousel.js: {}
+    bootstrap/js/collapse.js: {}
+    bootstrap/js/dropdown.js: {}
+    bootstrap/js/modal.js: {}
+    bootstrap/js/tooltip.js: {}
+    bootstrap/js/popover.js: {}
+    bootstrap/js/scrollspy.js: {}
+    bootstrap/js/tab.js: {}
+    bootstrap/js/transition.js: {}
+
+theme-scripts:
+  js:
+      js/jquery-migrate-1.2.1.js: {}
+      js/owl.carousel.js: {}
+      js/jquery.equalheights.js: {}
+      js/scripts.js: {}

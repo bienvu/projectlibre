@@ -1,0 +1,36 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'projectlibre'
+description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+package: 'projectlibre'
+
+regions:
+  header: 'Top Bar'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  feature: 'Fearute'
+  top_panel: 'Top Panel'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content_top: 'Content Top'
+  content: 'Content'
+  content_bottom: 'Content Bottom'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  bottom_panel: 'Bottom Panel'
+  footer_top: 'Footer Top'
+  footer: 'Footer'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_fourth: 'Footer Fourth'
+  footer_bottom: 'Footer Bottom'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'projectlibre/global-styling'
+  - 'projectlibre/bootstrap-scripts'
+  - 'projectlibre/theme-scripts'

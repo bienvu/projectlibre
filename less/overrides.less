@@ -1,0 +1,204 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/button";
+@import "component/field";
+@import "component/navbar";
+@import "component/panel";
+@import "component/toolbar";
+@import "component/vertical-tabs";
+
+
+body {
+  font-size: 14px;
+  margin-top: 0;
+  color: @gray-77;
+  word-wrap: break-word;
+}
+// Page header.
+.page-header {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  outline: none !important;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+  }
+}
+
+// Tabs/Local Actions.
+.local-actions {
+  margin: 10px 0 10px -5px;
+}
+.tabs--secondary {
+  margin: 10px 0 5px;
+}
+
+// Top panel
+.region-top-panel,
+.region-bottom-panel {
+  background: @gray-f4
+}
+
+// Footer.
+.footer {
+  background: @gray-1f;
+  color: @gray-99;
+  font-size: 12px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  line-height: 24px;
+
+  .region {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .block-title,
+  h2 {
+    color: @body-bg;
+    text-transform: uppercase;
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .footer-panel {
+    border-right: 1px solid @gray-33;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: @screen-sm) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding-bottom: 5px;
+      a {
+        color: @gray-99;
+        padding: 0;
+
+        &:hover {
+          color: @brand-primary;
+          text-decoration: none;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background: @gray-1f;
+  color: @gray-99;
+  font-size: 12px;
+
+  .region-footer-bottom {
+    padding: 0;
+    border-top: 1px solid @gray-44;
+    position: relative;
+
+    &:before {
+      border-top: 1px solid black;
+      content: "";
+      position: absolute;
+      top: -2px;
+      width: 100%;
+    }
+  }
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+// Help region.
+.region.region-help {
+  padding: 15px;
+
+  > .glyphicon {
+    font-size: @font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+
+.js-quickedit-page-title {
+  background: url("../images/bg-page-title.png") no-repeat center center;
+  color: @body-bg;
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  letter-spacing: 5px;
+
+  @media screen and (min-width: @screen-md) {
+    font-size: 48px;
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: @screen-lg) {
+    background-size: 100% auto;
+    padding: 100px 0;
+    font-size: 48px;
+  }
+}
+
+.help-block, .control-group .help-inline {
+  color: @gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+}
+
+.alert-success {
+  background-color: #f3faef;
+  border-color: #c9e1bd;
+  color: #325e1c;
+}
+
+blockquote {
+  border-left: none;
+  color: @gray-99;
+  font-style: italic;
+  line-height: 24px;
+  padding: 0;
+  text-indent: 30px;
+  position: relative;
+
+  &:before {
+    background: url("../images/icon-quote.png") no-repeat 0 0;
+    content: "";
+    height: 17px;
+    left: 0;
+    position: absolute;
+    width: 22px;
+  }
+}

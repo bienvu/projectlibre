@@ -1,0 +1,5 @@
+.clients__item {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}

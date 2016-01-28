@@ -1,0 +1,199 @@
+/**
+ * Navbar styling.
+ */
+body {
+  margin-top: (@grid-gutter-width / 2);
+
+  // Fix horizontal scrolling on iOS devices.
+  // http://drupal.org/node/1870076
+  position: relative;
+
+  &.navbar-is-static-top {
+    margin-top: 0;
+  }
+  &.navbar-is-fixed-top {
+    margin-top: (@navbar-height + (@grid-gutter-width / 2));
+  }
+  &.navbar-is-fixed-bottom {
+    padding-bottom: (@navbar-height + (@grid-gutter-width / 2));
+  }
+}
+.navbar.container {
+  @tablet:  ~"screen and (min-width: @{screen-sm-min})";
+  @normal:  ~"screen and (min-width: @{screen-md-min})";
+  @wide:    ~"screen and (min-width: @{screen-lg-min})";
+
+  @media @tablet {
+    max-width: ((@container-sm - @grid-gutter-width));
+  }
+  @media @normal {
+    max-width: ((@container-md - @grid-gutter-width));
+  }
+  @media @wide {
+    max-width: ((@container-lg - @grid-gutter-width));
+  }
+}
+.navbar.container > .container,
+.navbar.container-fluid > .container-fluid {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.branding {
+  padding: 20px 15px;
+  display: inline-block;
+  float: left;
+
+  @media screen and (max-width: @screen-xs-max) {
+    width: 100%;
+    padding: 15px 15px 5px;
+  }
+
+  .region-navigation {
+    float: left;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+#block-projectlibre-main-menu,
+#block-projectlibre-account-menu {
+  @media screen and (min-width: @screen-sm) {
+    display: inline-block;
+  }
+}
+
+#block-projectlibre-account-menu {
+  float: right;
+}
+
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
+  background: none;
+  border: none;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  background: none;
+}
+
+.navigation {
+  ul.menu {
+    text-align: left; 
+
+    > li {
+      > a {
+        color: #333;
+        font-size: 18px;
+        font-family: @custom-footer-font-name;
+        padding: 15px 15px;
+        text-transform: uppercase;
+        display: inline-block;
+        z-index: 1000;
+
+        @media screen and (min-width: @screen-md) {
+          padding: 33px 20px;
+        }
+
+        &:hover {
+          background: none;
+          color: @brand-primary;
+        }
+
+        .caret {        
+          display: none;
+        }
+      }
+    }
+
+    li a {
+      &.is-active {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .caret {
+    background: url("../images/icon-menu.png") no-repeat scroll center right;
+    border: none;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 100%;
+    z-index: 999;
+    cursor: pointer;
+
+    @media screen and (min-width: @screen-sm) {
+      display: none;
+    }
+  }
+
+  .dropdown {
+    &:hover {
+      > a {
+        color: @brand-primary;
+      }
+
+      .dropdown-menu {
+        @media screen and (min-width: @screen-sm) {
+          display: block;
+        }
+      }
+    }
+
+    &.open {
+      .dropdown-menu {
+        display: block;
+        padding-left: 20px;
+        width: 300px;
+      }
+    }
+
+    .dropdown-menu {
+      display: none;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0;
+      min-width: 200px;
+
+      li {
+        padding: 0 15px;
+
+        a {
+          padding: 10px 0;
+          border-bottom: 1px dashed @gray-e0;
+          text-transform: none;
+          display: block;
+        }
+
+        &:last-child a {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  margin: 0;
+  padding: 6px 10px;
+
+  @media screen and (min-width: 480px) and (max-width: @screen-sm-max) {
+    margin-top: 7px;
+  }
+
+  .icon-bar {
+    background: @gray-77;
+  }
+}

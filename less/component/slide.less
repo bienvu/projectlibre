@@ -1,0 +1,87 @@
+.slide {
+  border-radius: 5px;
+  border: 1px solid @gray-cd;
+  padding: 16px 16px 30px;
+
+  &__img {
+    padding-left: 0;
+
+    @media (min-width: 1024px) {
+      padding-right: 20px;
+    }
+  }
+  .owl-item {
+    padding-right: 5px;
+    padding-left: 5px;
+    @media (min-width: 1024px) {
+      padding: 0px;
+    }
+  }
+  &__content {
+    margin-bottom: 8px;
+    padding-left: 0;
+    padding-top: 23px;
+
+    @media (min-width: @screen-sm) {
+      padding-right: 15px;
+      padding-right: 0;
+    }
+
+    &__title {
+      color: @gray-33;
+      font-family: @custom-footer-font-name;
+      font-size: 18px;
+      margin-bottom: 9px;
+      margin-top: 0;
+      text-transform: none;
+
+      a {
+        color: @gray-55;
+
+        &:hover {
+          color: @brand-primary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .owl-theme .owl-controls {
+    margin-top: 5px; 
+    
+    .owl-page {
+      &.active {
+        span { 
+          background: @brand-primary;
+        }
+      }
+
+      span {
+        height: 9px;
+        margin: 0 5px;
+        width: 9px;
+
+        @media (min-width: @screen-sm) {
+          height: 7px;
+          margin: 0 3px;
+          width: 7px;
+        }
+
+        &:hover {
+          background: @brand-primary;
+        }
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl-wrapper,
+    .owl-item {
+      @media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+        .slide__img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

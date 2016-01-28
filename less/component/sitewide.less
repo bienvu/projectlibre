@@ -1,0 +1,89 @@
+a:hover, 
+a:focus {
+  border: none;
+}
+
+.sidebar {
+  @media screen and (min-width: @screen-sm) {
+    padding-left: 45px;
+  }
+
+  .block-title {
+    font-size: 18px;
+    line-height: inherit;
+    margin-bottom: 28px;
+  }
+
+  .block {
+  	border-bottom: 1px solid @gray-f4;
+  	margin-bottom: 40px;
+  	padding-bottom: 25px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.logo {
+  margin: 0;
+
+  @media screen and (max-width: 400px) {
+    width: 150px;
+  }
+
+  img {
+    max-width: 248px;
+    width: auto;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+  }
+}
+
+.region {
+  padding-top: 50px; 
+  padding-bottom: 30px;
+
+  @media screen and (min-width: @screen-md) {
+    padding-top: 80px;
+    padding-bottom: 55px;
+  }
+}
+
+.pager-nav {
+  clear: both;
+}
+
+.pagination {
+  margin-top: 0;
+
+  .pager__item {
+    margin-right: 5px;
+    display: inline-block;
+
+    a {
+      color: @gray-66;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      padding: 6px 9px;
+      line-height: 1;
+      border-radius: 3px;
+
+      &:hover {
+        background: none;
+        border: 1px solid @brand-primary;
+        color: @gray-66;
+      }
+    }
+
+    &.active {
+      a {
+        background: none;
+      }
+    }
+  }
+}

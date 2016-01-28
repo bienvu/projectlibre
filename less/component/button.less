@@ -1,0 +1,86 @@
+/**
+ * Button styles.
+ */
+.btn {
+  &.icon-before .glyphicon {
+    margin-left: -.25em;
+  }
+  &.icon-after .glyphicon {
+    margin-right: -.25em;
+  }
+}
+
+.btn:focus, 
+.btn.focus {
+	color: @body-bg;
+}
+
+.btn {
+  background: @brand-primary;
+  border: none;
+  color: @body-bg;
+  font-size: 14px; 
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 2px;
+
+  &:hover {
+    background: linear-gradient(darken(@brand-primary, 5%), @brand-primary 70%);
+    color: @body-bg;
+  }
+
+  &.btn-blue {
+  	background: @gray-blue;
+
+  	&:hover {
+	    background: linear-gradient(darken(@gray-blue, 5%), @gray-blue 70%);
+	  }
+  }
+
+  &.btn-border {
+  	border: 1px solid @body-bg;
+  	background: transparent;
+    line-height: 25px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.btn-white {
+  	background: @body-bg;
+  	color: @gray-59;
+
+  	&:hover {
+	    text-decoration: underline;
+	  }
+  }
+
+  &.btn-yellow {
+  	background: @gray-yellow;
+  	color: @gray-59;
+
+  	&:hover {
+	    background: linear-gradient(darken(@gray-yellow, 5%), @gray-yellow 70%);
+	  }
+  }
+
+  &.btn-orange {
+    background: @gray-orange;
+    color: @body-bg;
+
+    &:hover {
+      background: linear-gradient(darken(@gray-orange, 5%), @gray-orange 70%);
+    }
+  }
+
+  &.btn-border-no-bg {
+    border: 1px solid @gray-blue-3;
+    background: transparent;
+    color: @gray-blue-3;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
