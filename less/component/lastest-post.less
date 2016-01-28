@@ -1,3 +1,7 @@
+/**
+ * Lastest post styles.
+ */
+
 .lastest-post {
   &-item {
     display: inline-block;
@@ -12,7 +16,7 @@
 
   &__img {
     display: table-cell;
-    
+
     img {
       border: 1px solid @gray-cd;
       margin-right: 15px;
@@ -21,9 +25,9 @@
   }
 
   &__content {
-  	display: table-cell;
-    width: 100%;
+    display: table-cell;
     vertical-align: top;
+    width: 100%;
 
     &__title {
       color: @gray-33;
@@ -42,6 +46,7 @@
       }
     }
 
+    &__location,
     &__date {
       color: @gray-99;
       font-size: 12px;
@@ -53,24 +58,14 @@
         content: "";
         display: inline-block;
         height: 11px;
-        width: 12px;
         margin-right: 5px;
+        width: 12px;
       }
     }
 
     &__location {
-    	color: @gray-99;
-      font-size: 12px;
-      font-style: italic;
-      margin-bottom: 5px;
-
       &:before {
         background: url("../images/location.png") no-repeat 0 0;
-        content: "";
-        display: inline-block;
-        height: 11px;
-        width: 12px;
-        margin-right: 5px;
       }
     }
 
@@ -97,8 +92,8 @@
 
     &__comment {
       color: @gray-55;
-      font-style: italic;
       font-size: 12px;
+      font-style: italic;
     }
   }
 }
