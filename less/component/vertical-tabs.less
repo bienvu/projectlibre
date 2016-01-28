@@ -3,21 +3,28 @@
  * @see http://stackoverflow.com/questions/18432577/stacked-tabs-in-bootstrap-3
  * @see http://bootply.com/74926
  */
+
 .tabbable {
   margin-bottom: 20px;
 }
-.tabs-below, .tabs-left, .tabs-right {
+
+.tabs-below,
+.tabs-left,
+.tabs-right {
   > .nav-tabs {
     border-bottom: 0;
+
     .summary {
       color: @nav-disabled-link-color;
       font-size: @font-size-small;
     }
   }
 }
+
 .tab-pane > .panel-heading {
   display: none;
 }
+
 .tab-content > .active {
   display: block;
 }
@@ -26,18 +33,22 @@
 .tabs-below {
   > .nav-tabs {
     border-top: 1px solid @nav-tabs-border-color;
+
     > li {
-      margin-top: -1px;
       margin-bottom: 0;
+      margin-top: -1px;
+
       > a {
         border-radius: 0 0 @border-radius-base @border-radius-base;
+
         &:hover,
         &:focus {
-          border-top-color: @nav-tabs-border-color;
           border-bottom-color: transparent;
+          border-top-color: @nav-tabs-border-color;
         }
       }
     }
+
     > .active {
       > a,
       > a:hover,
@@ -54,20 +65,25 @@
   > .nav-tabs {
     padding-bottom: 20px;
     width: 220px;
+
     > li {
       float: none;
+
       &:focus {
         outline: 0;
       }
+
       > a {
         margin-right: 0;
         margin-bottom: 3px;
+
         &:focus {
           outline: 0;
         }
       }
     }
   }
+
   > .tab-content {
     border-radius: 0 @border-radius-base @border-radius-base @border-radius-base;
     border: 1px solid @nav-tabs-border-color;
@@ -82,13 +98,16 @@
   > .nav-tabs {
     float: left;
     margin-right: -1px;
+
     > li > a {
       border-radius: @border-radius-base 0 0 @border-radius-base;
+
       &:hover,
       &:focus {
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-border-color @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color;
       }
     }
+
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
@@ -103,14 +122,17 @@
   > .nav-tabs {
     float: right;
     margin-left: -1px;
+
     > li > a {
       border-radius: 0 @border-radius-base @border-radius-base 0;
+
       &:hover,
       &:focus {
         border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
         box-shadow: 1px 1px 1px rgba(0,0,0,.05);
       }
     }
+
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
@@ -119,6 +141,7 @@
   }
 }
 
+// Right primary.
 .tabs--primary {
   margin-bottom: 25px;
   margin-top: -5px;
@@ -130,15 +153,15 @@
       border-radius: 0;
       border: 1px solid @gray-d0;
       box-shadow: none;
+      color: @gray-77;
       margin-right: 5px;
       margin-top: 5px;
       padding: 7px 15px;
       text-shadow: none;
-      color: @gray-77;
 
       &:hover {
-        color: @brand-primary;
         border: 1px solid @gray-d0;
+        color: @brand-primary;
       }
     }
   }

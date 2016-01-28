@@ -1,3 +1,7 @@
+/**
+ * Testimonial component.
+ */
+
 .testimonial {
   .row {
     margin: 0 -10px;
@@ -23,9 +27,9 @@
   }
 
   &__logo {
+    -webkit-justify-content: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-justify-content: center;
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
@@ -40,8 +44,8 @@
   }
 
   &__author {
-    text-align: right;
     color: @gray-66;
+    text-align: right;
 
     &-name,
     &-description {
@@ -51,7 +55,7 @@
     &-description {
       &:before {
         border-top: 1px solid @gray-66;
-        content: "";
+        content: '';
         display: inline-block;
         margin-bottom: 4px;
         margin-left: 10px;
