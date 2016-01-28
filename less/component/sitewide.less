@@ -1,6 +1,10 @@
-a:hover, 
+/**
+ * SiteWide style.
+ */
+
+a:hover,
 a:focus {
-  border: none;
+  border: 0;
 }
 
 .sidebar {
@@ -10,17 +14,16 @@ a:focus {
 
   .block-title {
     font-size: 18px;
-    line-height: inherit;
     margin-bottom: 28px;
   }
 
   .block {
-  	border-bottom: 1px solid @gray-f4;
-  	margin-bottom: 40px;
-  	padding-bottom: 25px;
+    border-bottom: 1px solid @gray-f4;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
 
     &:last-child {
-      border-bottom: none;
+      border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
     }
@@ -30,48 +33,43 @@ a:focus {
 .logo {
   margin: 0;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: @screen-xs) {
     width: 150px;
   }
 
   img {
     max-width: 248px;
     width: auto;
-    @media screen and (max-width: 400px) {
+
+    @media screen and (max-width: @screen-xs) {
       width: 100%;
     }
   }
 }
 
 .region {
-  padding-top: 50px; 
   padding-bottom: 30px;
+  padding-top: 50px;
 
   @media screen and (min-width: @screen-md) {
-    padding-top: 80px;
     padding-bottom: 55px;
+    padding-top: 80px;
   }
-}
-
-.pager-nav {
-  clear: both;
 }
 
 .pagination {
   margin-top: 0;
 
   .pager__item {
-    margin-right: 5px;
     display: inline-block;
+    margin-right: 6px;
 
     a {
+      border-radius: 3px;
       color: @gray-66;
       font-size: 16px;
-      font-weight: 400;
-      margin: 0;
-      padding: 6px 9px;
       line-height: 1;
-      border-radius: 3px;
+      padding: 6px 9px;
 
       &:hover {
         background: none;

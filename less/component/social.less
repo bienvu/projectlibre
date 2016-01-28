@@ -1,25 +1,26 @@
+/**
+ * Social component.
+ */
+
 .social {
   display: inline-block;
-  
+
   &-item {
     float: left;
-    margin: 0 12px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    margin-right: 24px;
 
     &:last-child {
       margin-right: 0;
     }
 
     a {
-      font-size: 0;
       display: inline-block;
+      font-size: 0;
 
       &:before {
-        background: url("../images/social.png") no-repeat 0 0;
-        content: "";
+        background-size: 236px 23px;
+        background: url('../images/social.png') no-repeat 0 0;
+        content: '';
         display: inline-block;
         height: 22px;
         width: 23px;
@@ -46,7 +47,7 @@
       }
 
       &:hover:before {
-        background-image: url("../images/social-hover.png");
+        background-image: url('../images/social-hover.png');
       }
     }
   }
