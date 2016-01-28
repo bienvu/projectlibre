@@ -1,25 +1,24 @@
 // Font theme
-@import "fonts.less";
+@import 'fonts.less';
 
 // Bootstrap library.
 @import 'bootstrap';
-
 
 // Base-theme overrides.
 @import 'overrides';
 
 // Sitewide
-@import "component/sitewide";
-@import "component/cta";
-@import "component/service";
-@import "component/clients";
-@import "component/media-box";
-@import "component/testimonial";
-@import "component/media";
-@import "component/slide";
-@import "component/social";
-@import "component/lastest-post";
-@import "component/teaser";
+@import 'component/sitewide';
+@import 'component/cta';
+@import 'component/service';
+@import 'component/clients';
+@import 'component/media-box';
+@import 'component/testimonial';
+@import 'component/media';
+@import 'component/slide';
+@import 'component/social';
+@import 'component/lastest-post';
+@import 'component/teaser';
 
 
 .title {
@@ -155,7 +154,7 @@
       &:before {
         background: @gray-99;
         border-radius: 100%;
-        content: "";
+        content: '';
         display: inline-block;
         height: 5px;
         left: 0;
@@ -171,7 +170,7 @@
 
     .dropdown-menu {
       background: none;
-      border: none;
+      border: 0;
       box-shadow: none;
       display: block;
       font-size: 12px;
@@ -187,7 +186,7 @@
         &:before {
           border-radius: 100%;
           border: 1px solid @gray-99;
-          content: "";
+          content: '';
           display: inline-block;
           height: 5px;
           left: 0;
@@ -221,12 +220,12 @@
     padding-bottom: 30px;
 
     .panel-default {
-      border: none;
+      border: 0;
       box-shadow: none;
 
       > .panel-heading {
         background: none;
-        border: none;
+        border: 0;
         padding: 0;
 
         .panel-title {
@@ -244,16 +243,15 @@
 
   #bootstrap-panel--2,
   #bootstrap-panel--3 {
-    border-bottom: 1px dashed @gray-d6;
-    border-left: none;
-    border-right: none;
-    border-top: none;
+    border-color: @gray-66;
+    border-style: dashed;
+    border-width: 0 0 1px 0;
     margin-bottom: 25px;
     padding-bottom: 30px;
 
     .panel-heading {
       background: none;
-      border:none;
+      border: 0;
       box-shadow: none;
       margin-bottom: 10px;
       padding: 0;
@@ -272,14 +270,14 @@
 }
 
 .box-service {
-	.block-title {
-    margin-bottom: 30px;
+  .block-title {
     line-height: 32px;
+    margin-bottom: 30px;
 
     @media screen and (min-width: @screen-md) {
       margin-bottom: 52px;
     }
-	}
+  }
 }
 
 .feature-start-up {
@@ -348,8 +346,8 @@
   .Documentation,
   .Wiki {
     &:before {
-      background: url("../images/events-calendar-icon.png") no-repeat 0 0;
-      content: "";
+      background: url('../images/events-calendar-icon.png') no-repeat 0 0;
+      content: '';
       display: inline-block;
       float: right;
       height: 25px;
@@ -358,19 +356,19 @@
   }
 
   .Discussion:before {
-    background: url("../images/human.png") no-repeat 0 0;
+    background: url('../images/human.png') no-repeat 0 0;
   }
 
   .Blog:before {
-    background: url("../images/blogGeneric.png") no-repeat 0 0;
+    background: url('../images/blogGeneric.png') no-repeat 0 0;
   }
 
   .Wiki:before {
-    background: url("../images/wiki.png") no-repeat 0 0;
+    background: url('../images/wiki.png') no-repeat 0 0;
   }
 
   .Documentation:before {
-    background: url("../images/document.png") no-repeat 0 0;
+    background: url('../images/document.png') no-repeat 0 0;
   }
 }
 
@@ -543,8 +541,8 @@
       margin-bottom: 20px;
 
       &:before {
-        background: url("../images/icon-register.png") no-repeat 0 0;
-        content: "";
+        background: url('../images/icon-register.png') no-repeat 0 0;
+        content: '';
         display: inline-block;
         height: 16px;
         margin-right: 10px;
@@ -617,7 +615,7 @@
   }
 
   .form-control {
-    border: none;
+    border: 0;
     box-shadow: none;
     height: auto;
     padding: 10px 15px;
@@ -728,8 +726,8 @@
 
       .comment__time {
         &:before {
-          background: url("../images/date.png") no-repeat 0 0;
-          content: "";
+          background: url('../images/date.png') no-repeat 0 0;
+          content: '';
           display: inline-block;
           height: 11px;
           margin-right: 5px;
@@ -795,7 +793,6 @@
     }
   }
 }
-
 
 .cta.cta--center .cta-inner .cta__content {
   display: block;
@@ -911,7 +908,7 @@
     }
 
     .form-control {
-      border: 1px solid #cccccc;
+      border: 1px solid @gray-cc;
       width: 100%;
     }
 
@@ -981,8 +978,8 @@
     padding: 0;
 
     &:before {
-      background: url("../images/icon-mobile-user.png") no-repeat 0 0;
-      content: "";
+      background: url('../images/icon-mobile-user.png') no-repeat 0 0;
+      content: '';
       height: 21px;
       left: -7px;
       margin-top: 0;
@@ -997,8 +994,8 @@
   position: relative;
 
   &:before {
-    background: url("../images/icon-user.png") no-repeat 0 0;
-    content: "";
+    background: url('../images/icon-user.png') no-repeat 0 0;
+    content: '';
     height: 21px;
     left: 0;
     margin-top: -7px;
@@ -1036,7 +1033,7 @@
     }
 
     .account {
-      background: url("../images/icon-mobile-user.png") no-repeat 0 0;
+      background: url('../images/icon-mobile-user.png') no-repeat 0 0;
       cursor: pointer;
       display: inline-block;
       height: 21px;
@@ -1052,7 +1049,7 @@
     }
 
     .navbar-nav {
-      background: #fff;
+      background: @white;
       display: none;
       margin: 0;
       position: absolute;
@@ -1081,7 +1078,7 @@
         }
 
         &:after {
-          content: "";
+          content: '';
         }
 
         &:hover {
@@ -1105,7 +1102,7 @@
         }
 
         &:after {
-          content: "/";
+          content: '/';
           padding-left: 10px;
         }
 
@@ -1117,11 +1114,11 @@
       &:last-child {
         a:before {
           background: none;
-          content: "";
+          content: '';
         }
 
         a:after {
-          content: "";
+          content: '';
         }
       }
     }
@@ -1234,7 +1231,7 @@
 }
 
 .table-striped {
-  td[headers*="view-title-table-column"] {
+  td[headers*='view-title-table-column'] {
     width: 200px;
   }
 }
@@ -1280,11 +1277,11 @@
     margin-right: 5px;
 
     &:after {
-      content: ",";
+      content: ',';
     }
 
     &:last-child:after {
-      content: "";
+      content: '';
     }
   }
 }

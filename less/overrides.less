@@ -1,20 +1,20 @@
 // @todo these should be their own CSS files and only included when
 // specific Drupal libraries are used.
-@import "component/alert";
-@import "component/button";
-@import "component/field";
-@import "component/navbar";
-@import "component/panel";
-@import "component/toolbar";
-@import "component/vertical-tabs";
-
+@import 'component/alert';
+@import 'component/button';
+@import 'component/field';
+@import 'component/navbar';
+@import 'component/panel';
+@import 'component/toolbar';
+@import 'component/vertical-tabs';
 
 body {
+  color: @gray-77;
   font-size: 14px;
   margin-top: 0;
-  color: @gray-77;
   word-wrap: break-word;
 }
+
 // Page header.
 .page-header {
   margin-top: 0;
@@ -37,6 +37,7 @@ a {
 .local-actions {
   margin: 10px 0 10px -5px;
 }
+
 .tabs--secondary {
   margin: 10px 0 5px;
 }
@@ -52,24 +53,24 @@ a {
   background: @gray-1f;
   color: @gray-99;
   font-size: 12px;
+  line-height: 24px;
   padding-bottom: 45px;
   padding-top: 45px;
-  line-height: 24px;
 
   .region {
-    padding-top: 0;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .block-title,
   h2 {
     color: @body-bg;
-    text-transform: uppercase;
-    font-family: ProximaNova-Regular;
+    font-family: @custom-footer-font-name;
     font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
     line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
   }
 
   .footer-panel {
@@ -91,14 +92,15 @@ a {
 
     li {
       padding-bottom: 5px;
+
       a {
         color: @gray-99;
         padding: 0;
 
         &:hover {
+          background: none;
           color: @brand-primary;
           text-decoration: none;
-          background: none;
         }
       }
     }
@@ -111,13 +113,13 @@ a {
   font-size: 12px;
 
   .region-footer-bottom {
-    padding: 0;
     border-top: 1px solid @gray-44;
+    padding: 0;
     position: relative;
 
     &:before {
       border-top: 1px solid black;
-      content: "";
+      content: '';
       position: absolute;
       top: -2px;
       width: 100%;
@@ -137,27 +139,28 @@ p:last-child,
   padding: 15px;
 
   > .glyphicon {
-    font-size: @font-size-large;
     float: left;
+    font-size: @font-size-large;
     margin: -0.05em 0.5em 0 0;
   }
+
   .block {
     overflow: hidden;
   }
 }
 
 .js-quickedit-page-title {
-  background: url("../images/bg-page-title.png") no-repeat center center;
+  background: url('../images/bg-page-title.png') no-repeat center center;
   color: @body-bg;
   display: inline-block;
   font-size: 26px;
+  letter-spacing: 5px;
   line-height: 1;
   margin-bottom: 0;
   padding: 30px 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-  letter-spacing: 5px;
 
   @media screen and (min-width: @screen-md) {
     font-size: 48px;
@@ -179,9 +182,9 @@ p:last-child,
 }
 
 .alert-success {
-  background-color: #f3faef;
-  border-color: #c9e1bd;
-  color: #325e1c;
+  background-color: @white-darken;
+  border-color: @green-lighter;
+  color: @green-dark;
 }
 
 blockquote {
@@ -190,12 +193,12 @@ blockquote {
   font-style: italic;
   line-height: 24px;
   padding: 0;
-  text-indent: 30px;
   position: relative;
+  text-indent: 30px;
 
   &:before {
-    background: url("../images/icon-quote.png") no-repeat 0 0;
-    content: "";
+    background: url('../images/icon-quote.png') no-repeat 0 0;
+    content: '';
     height: 17px;
     left: 0;
     position: absolute;
